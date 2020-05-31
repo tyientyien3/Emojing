@@ -61,10 +61,16 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# ログイン機能・ユーザー管理
+# devise
 gem 'devise'
 
 #bootstrap
 gem 'bootstrap', '~> 4.5.0'
 gem 'jquery-rails'
 
+# refilfe
+gem "refile", require: "refile/rails", github: "manfe/refile"
+gem "refile-mini_magick"
+
+# pry-byebug
+gem "pry-byebug", group: :development
